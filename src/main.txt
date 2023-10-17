@@ -1,0 +1,54 @@
+ Polymorphism - Many form
+
+    public static void main(String[] args) {
+        drawUIControl(new TextBox());
+    }
+    public static void drawUIControl(UIControl control){
+        control.draw();
+    }
+
+
+ Inheritance - Reuse code like common behaviour
+
+    public static void main(String[] args) {
+        var textBox = new TextBox();
+        textBox.enable();
+    }
+
+ Abstraction
+
+    public static void main(String[] args) {
+        var mailService = new MailService();
+        mailService.sendMail();
+    }
+
+
+Encapsulation
+
+    public static void main(String[] args) {
+        Account account = new Account();
+        var account = new Account(); Can use this instead of 1 one. Since we are using class name twice
+        account.deposit(10);
+        account.withdraw(5);
+        System.out.println(account.getBalance());
+
+    }
+
+
+
+
+ Interface
+
+
+    TaxCalculator calculator = getCalculator();
+      calculator.calculateTex();
+              }
+
+public static TaxCalculator getCalculator() {
+        return new TaxCalculator2019();
+        }
+
+ Class
+
+        User user = new User("Aashik");
+        user.sayHello();
